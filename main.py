@@ -1,4 +1,9 @@
+import os
 import subprocess
+abspath = os.path.abspath(__file__)
+dname = os.path.dirname(abspath)
+os.chdir(dname)
+
 f = open("state", "r")
 global STATE
 STATE = f.read()
